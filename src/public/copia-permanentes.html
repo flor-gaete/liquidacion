@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Novedades Permanentes</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">           
+            <!-- Logo -->
+            <a class="logo-wrapper waves-effect" href="index.html">
+                <img src="img/logo-principal.png" width="" class="" alt="">
+            </a>
+
+            <!--Accordion-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion 1-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                            aria-controls="collapseOne1">
+                            <h6 class="mb-0">
+                                <i class="fas fa-user"></i> Datos de Agentes <i
+                                    class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="totaldeagentes.html">
+                                Listado de Agentes
+                            </a>
+                            <hr>
+                            <!-- <a class="" href="informe.html">
+                                Gráficos
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 2-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                            aria-expanded="false" aria-controls="collapseTwo2">
+                            <h6 class="mb-0">
+                                <i class="fas fa-book-open"></i> Novedades <i class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="novedades_transitorias.html">
+                                Novedades Transitorias
+                            </a>
+                            <hr>
+                            <a class="" href="novedades_permanentes.html">
+                                Novedades Permanentes
+                            </a>
+                            <hr>
+                            <a class="" href="">
+                                Parametros de Config.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 3-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree3">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                            aria-expanded="false" aria-controls="collapseThree3">
+                            <h6 class="mb-0">
+                                <i class="fas fa-file-invoice-dollar"></i>  Liquidación<i class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="faltaconaviso.html">
+                              <i class="fas fa"></i> Autoridades Superiores.
+                            </a>
+                            <hr>
+                            <a class="" href="cumple.html">
+                                Personal Jerarquico.
+                            </a>
+                            <hr>
+                            <a class="" href="jubilaciones.html">
+                                Escalafón Gral .
+                            </a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion 4-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFour">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <h6 class="mb-0">
+                                <i class="far fa-file-alt"></i> Informes <i class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="faltaconaviso.html">
+                               Liquidar
+                            </a>
+                            <hr>
+                            <a class="" href="cumple.html">
+                                Exportar Datos
+                            </a>
+                            <hr>
+                            <a class="" href="jubilaciones.html">
+                                Prueba 2 .
+                            </a>
+                            <hr>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+        <!-- Sidebar -->
+    
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mx-lg-3">
+        <div class="jumbotron bg-color">
+            <h2 class="text-tittle">
+                Novedades Permanentes
+            </h2>
+        </div>
+
+        <!--Grid column-->
+        <div class="col-lg-12 col-md-6 mb-4 p-0 wow fadeIn">
+            <!--Card-->
+            <div class="card">
+                <!--Card content-->
+                <div class="card-body text-center">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-4">
+                           <div class="input-group md-form form-sm form-2 pl-0">
+                                <input class="form-control my-0 py-1 border" type="text" placeholder="Escriba el nombre y/o apellido" aria-label="Search">
+                                <div class="input-group-append">
+                                    <span class="input-group-text primary-color-dark" id="basic-text1"><i class="fas fa-search white-text"
+                                    aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+
+                    <table id="dtBasicExample"
+                        class="text-center table table-striped table-sm text-center" cellspacing="0"
+                        width="100%">
+                        <thead class="bg-color-tr">
+                            <tr>
+                                <th class="th-sm font-weight-bolder">Nombre y Apellido
+                                </th>
+                                <th class="th-sm font-weight-bolder"> Datos de Agente
+                                </th>
+                            </tr>
+                        </thead> 
+                        <tbody id="tabla-totaldeagentes">  
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td><button type="button" class="btn success-color btn-sm white-text"  data-mdb-toggle="tooltip" title="Ver" data-toggle="modal" data-target="#modalLRFormDemo" id="${legajoId}" onclick="datosAgente(event)"> &nbsp; Ver &nbsp; <i class="fas fa-eye" style="font-size: 12px;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td><button type="button" class="btn success-color btn-sm white-text"  data-mdb-toggle="tooltip" title="Ver" data-toggle="modal" data-target="#modalLRFormDemo" id="${legajoId}" onclick="datosAgente(event)"> &nbsp; Ver &nbsp; <i class="fas fa-eye" style="font-size: 12px;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td><button type="button" class="btn success-color btn-sm white-text"  data-mdb-toggle="tooltip" title="Ver" data-toggle="modal" data-target="#modalLRFormDemo" id="${legajoId}" onclick="datosAgente(event)"> &nbsp; Ver &nbsp; <i class="fas fa-eye" style="font-size: 12px;"></i></button></td>
+                            </tr> 
+                        </tbody> 
+                        
+                    </table> 
+                </div>
+            </div>
+            <!--/.Card-->
+        </div>
+
+        <!--Grid column-->
+
+        <!--Modal: Login / Register Form Demo-->
+        <div class="modal fade" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl align-items-center" role="document">
+                <div class="modal-content">
+                    <div class="modal-header1">
+                        <button type="button" class="close font-weight-bolder white-text" data-dismiss="modal" aria-label="Close" title="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button> 
+                        <h5 class="text-tittle" id="exampleModalLabel">Novedades Permanentes</h5>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body grey lighten-3">
+                        <div class="container">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder text-center text-color p-2">
+                                            Lista de Novedades
+                                        </h5>                                     
+                                        <!--Filtro de Novedades-->
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <select class="browser-default custom-select1 border border-primary">
+                                                        <option selected>Filtrar novedades</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        <!--Fin del Filtro de Novedades-->
+                                        <br>
+                                        <!-- check -->
+                                    <div class="row">
+
+                                        <!-- FILA IZQ -->
+                                        <div class="col-6">
+                                            <div id="" data-spy="scroll" data-target="" data-offset="0" class="scrollspy-example border">
+                                                <ul class="list-group ">
+                                                    <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox" id="list-group-flus"> 
+                                                            <input type="checkbox" class="custom-control-input" id="check1">
+                                                            <label class="custom-control-label" for="check1">&nbsp;&nbsp;<strong>101</strong> Sueldo Basico o Productividad</label>
+                                                        </div>
+                                                    </li>
+
+                                                     <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox" id="list-group-flus"> 
+                                                            <input type="checkbox" class="custom-control-input" id="check1">
+                                                            <label class="custom-control-label" for="check1">&nbsp;&nbsp;<strong>102</strong> Funcion Jerarquica</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check2">
+                                                            <label class="custom-control-label" for="check2">&nbsp;&nbsp;<strong>103</strong> Antiguedad</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check3">
+                                                            <label class="custom-control-label" for="check3">&nbsp;&nbsp;<strong>104</strong> Dedicacion Funcional o Gastos de Representacion</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check4">
+                                                            <label class="custom-control-label" for="check4">&nbsp;&nbsp;<strong>107</strong> Responsabilidad Profesional</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                    <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check5">
+                                                            <label class="custom-control-label" for="check5">&nbsp;&nbsp;<strong>112</strong> Presentismo</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                        <!-- Default checked -->
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="check5">
+                                                                <label class="custom-control-label" for="check5">&nbsp;&nbsp;<strong>110</strong> Título</label>
+                                                            </div>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                        <!-- Default checked -->
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check6">
+                                                            <label class="custom-control-label" for="check6">&nbsp;&nbsp;<strong>109</strong> Suplemento Transitorio a Cuenta</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div> <!-- Fin check -->
+                                            <br>
+                                            <!-- BOTON CARGAR-->
+                                            <div class="btn-position">                                
+                                                <button type="button" class="btn btn-sm primary-color white-text"> Añadir  &nbsp;&nbsp; <i class="fas fa-plus-square"></i></button>
+                                            </div>
+                                            <br>
+                                        </div> 
+                                        <!-- Fin col 6 izq -->
+
+                                        <!-- FILA DERECHA -->
+                                        <div class="col-6"> 
+                                            <div class="conteiner scrollspy-example border" data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="0">
+                                            <ul class="list-group">
+                                                <li class="list-group-item disabled text-center" aria-disabled="true">Permanentes</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>101</strong> Sueldo Basico o Productividad</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>104</strong> Dedicacion Funcional o Gastos de Representacion</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>110</strong> Titulo</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>112</strong> Presentismo</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>201</strong> Aporte Jubilatorio</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>210</strong> Aporte Obra Social Titular</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>217</strong> IASEP Subsidio Sepelio</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>217</strong> </li>
+                                              </ul>
+                                            </div>
+                                            <br>
+                                            <!-- BOTON CARGAR-->
+                                            <div class="btn-position">                                
+                                                <button type="button" class="btn success-color white-text"> Cargar &nbsp;&nbsp; <i class="fas fa-upload"></i></button>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <!-- Fin col 6 derecha -->
+                                   
+                                    </div> <!-- Fin Row -->        
+                                </div> <!-- card-body -->
+                            </div> <!--Fin card text-left-->    
+                        </div> <!--Fin Container-->
+                    </div> <!--modal-body-->
+                </div>  <!--FIN  modal-content-->
+            </div> <!--FIN modal-dialog-->
+        </div>  <!--FIN Modal-->
+    </main>
+        
+
+        <!-- SCRIPTS -->
+        <!-- pdfmake -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js" integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA==" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Initializations -->
+        <script type="text/javascript">
+            // Animations initialization
+            new WOW().init();
+        </script>
+        <!-- MDBootstrap Datatables  -->
+        <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+        <script src="js/utils/novedades_permanentes.js"></script>
+        <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            });
+        </script> -->
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            })
+        </script> -->
+       
+
+</body>
+
+</html>

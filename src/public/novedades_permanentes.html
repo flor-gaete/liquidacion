@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Novedades Permanentes</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo-barra.png" alt="logo-HTC">
+            </a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index2.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Section Content-->
+    <section id="content">
+
+        <aside id="aside">
+            <!-- Inicio Barra Lateral-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <!-- Accordion 1-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header  " role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-user"></i> Datos de Agentes
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="totaldeagentes.html"> Listado de Agentes </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 1-->
+
+                <!-- Accordion 2-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-book-open"></i> Novedades
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="novedades_transitorias.html"> Novedades Transitorias </a>
+                                    <a href="novedades_permanentes.html"> Novedades Permanentes </a>
+                                    <a href="embargos.html"> Embargos </a>
+                                    <a href="IPV_cuota.html"> IPV - Cuotas </a>
+                                    <a href="parametros_configuracion.html"> Parametros de Configuración </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 2-->
+
+                <!-- Accordion 3-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-file-invoice-dollar"></i> Liquidación
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="escalafon_general.html"> Escalafon General </a>
+                                    <a href="personal_jerarquico.html"> Autoridades Sup. <br> <small> (Personal
+                                            Jerarquico)</small></a>
+                                    <a href="Miembros_htc.html"> Autoridades Sup. <br> <small> (Miembros del HTC)
+                                        </small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 3-->
+
+                <!-- Accordion 4-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="far fa-file-alt"></i> Informes
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="#"> Exportar Datos </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 4-->
+            </div>
+            <!-- Fin Barra Lateral-->
+        </aside>
+
+        <!-- Inicio Segundo Contenedor -->
+        <div class="contenedor2">
+
+            <!-- Inicio Portada -->
+            <div class="portada">
+                <h1 class="titulo">Novedades Permanentes</h1>
+            </div>
+            <!-- Fin Portada -->
+
+
+            <!-- Filtro - Buscador -->
+            <div class="section-filtro">
+                <div class="col-md-6">
+                    <div class="input-group md-form form-sm form-2 pl-0">
+                        <input class="form-control my-0 py-1 border " type="text"
+                            placeholder="Escriba el nombre y/o apellido y presione el buscador" aria-label="Search">
+                        <div class="input-group-append">
+                            <span class="input-group-text primary-color-dark" id="basic-text1">
+                                <i class="fas fa-search white-text" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Filtro - Buscador -->
+
+            <!-- Inicio tabla -->
+            <div class="tabla1">
+                <table id="dtBasicExample" class="text-center table table-striped table-sm" cellspacing="0">
+                    <thead class="bg-color-table">
+                        <tr>
+                            <th class="th-sm font-weight-bolder">Nombre y Apellido
+                            </th>
+                            <th class="th-sm font-weight-bolder">Ver Novedades
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-totaldeagentes">
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td><button type="button" class="btn success-color btn-sm white-text"
+                                    data-mdb-toggle="tooltip" title="Ver" data-toggle="modal"
+                                    data-target="#modalLRFormDemo" id="${legajoId}" onclick="datosAgente(event)">
+                                    &nbsp; Ver &nbsp; <i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <td>Garrett Winters</td>
+                        <td><button type="button" class="btn success-color btn-sm white-text" data-mdb-toggle="tooltip"
+                                title="Ver" data-toggle="modal" data-target="#modalLRFormDemo" id="${legajoId}"
+                                onclick="datosAgente(event)">
+                                &nbsp; Ver &nbsp; <i class="fas fa-eye"></i></button>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td><button type="button" class="btn success-color btn-sm white-text"
+                                        data-mdb-toggle="tooltip" title="Ver" data-toggle="modal"
+                                        data-target="#modalLRFormDemo" id="${legajoId}" onclick="datosAgente(event)">
+                                        &nbsp; Ver &nbsp; <i class="fas fa-eye"></i></button>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Fin tabla -->
+
+        </div>
+        <!-- Fin Segundo Contenedor -->
+
+    </section>
+    <!--Fin Section Content-->
+
+
+
+
+    <!--Modal: Login / Register Form Demo-->
+    <div class="modal fade" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl align-items-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header1">
+                    <button type="button" class="close font-weight-bolder white-text" data-dismiss="modal"
+                        aria-label="Close" title="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="text-tittle" id="exampleModalLabel">Novedades Permanentes</h5>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body grey lighten-3">
+                    <div class="container ">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- FILA IZQ -->
+                                    <div class="col-6 ">
+                                        <!--Filtro de Novedades-->
+
+                                        <h4 class="text-tittle p-5 font-weight-bolder">Lista de Novedades</h4>
+
+                                        <select class="browser-default custom-select1 border border-primary">
+                                            <option selected>Filtrar novedades</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                        <!--Fin del Filtro de Novedades-->
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <!-- BOTON CARGAR-->
+                                        <div class="btn-position">
+                                            <button type="button" class="btn primary-color white-text"> Añadir
+                                                &nbsp;&nbsp; <i class="fas fa-plus-square"></i></button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <!-- Fin col 6 izq -->
+
+                                    <!-- FILA DERECHA -->
+                                    <div class="col-6">
+                                        <br><br><br>
+                                        <div class="conteiner scrollspy-example border" data-mdb-spy="scroll"
+                                            data-mdb-target="#scrollspy" data-mdb-offset="0">
+                                            <ul class="list-group">
+                                                <li class="list-group-item disabled text-center" aria-disabled="true">
+                                                    Permanentes</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>101</strong> Sueldo
+                                                    Basico o Productividad</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>104</strong>
+                                                    Dedicacion Funcional o Gastos de Representacion</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>110</strong> Titulo
+                                                </li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>112</strong>
+                                                    Presentismo</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>201</strong> Aporte
+                                                    Jubilatorio</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>210</strong> Aporte
+                                                    Obra Social Titular</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>217</strong> IASEP
+                                                    Subsidio Sepelio</li>
+                                                <li class="list-group-item">&nbsp;&nbsp;<strong>217</strong> </li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <!-- BOTON CARGAR-->
+                                        <div class="btn-position">
+                                            <button type="button" class="btn success-color white-text"> Cargar
+                                                &nbsp;&nbsp; <i class="fas fa-upload"></i></button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <!-- Fin col 6 derecha -->
+
+                                </div> <!-- Fin Row -->
+                            </div> <!-- card-body -->
+                        </div>
+                        <!--Fin card text-left-->
+                    </div>
+                    <!--Fin Container-->
+                </div>
+                <!--modal-body-->
+            </div>
+            <!--FIN  modal-content-->
+        </div>
+        <!--FIN modal-dialog-->
+    </div>
+    <!--FIN Modal-->
+
+
+
+    <!-- SCRIPTS -->
+    <!-- pdfmake -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"
+        integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+    <script src="js/utils/novedades_permanentes.js"></script>
+    <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            });
+        </script> -->
+    <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            })
+        </script> -->
+
+
+</body>
+
+</html>

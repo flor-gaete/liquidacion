@@ -1,0 +1,5 @@
+// Legajos con datos incompletos
+_id (MongoDB): ["5faf4b1c82e2241330fee13d", "5faf4b1c82e2241330fee167", "5faf4b1c82e2241330fee1c4", "5faf4b1c82e2241330fee1c6"];
+
+id Alfresco: ["55d4ba08-5fff-4b60-aa4d-673b54f9f9be", "549766e3-098c-4403-ba33-70e48b511d74", "16143fee-3260-4e99-82f0-95f6ca4aa7f8", "6a47f40f-130d-477b-bf5e-b25530b0e737"];
+

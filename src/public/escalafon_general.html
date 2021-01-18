@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Escalafon General</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            oIrflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo-barra.png" alt="logo-HTC">
+            </a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index2.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Section Content-->
+    <section id="content">
+
+        <aside id="aside">
+
+            <!-- Inicio Barra Lateral-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <!-- Accordion 1-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header  " role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-user"></i> Datos de Agentes
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="totaldeagentes.html"> Listado de Agentes </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 1-->
+
+                <!-- Accordion 2-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-book-open"></i> Novedades
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="novedades_transitorias.html"> Novedades Transitorias </a>
+                                    <a href="novedades_permanentes.html"> Novedades Permanentes </a>
+                                    <a href="embargos.html"> Embargos </a>
+                                    <a href="IPV_cuota.html"> IPV - Cuotas </a>
+                                    <a href="parametros_configuracion.html"> Parametros de Configuración </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 2-->
+
+                <!-- Accordion 3-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="fas fa-file-invoice-dollar"></i> Liquidación
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="escalafon_general.html"> Escalafon General </a>
+                                    <a href="personal_jerarquico.html"> Autoridades Sup. <br> <small> (Personal
+                                            Jerarquico)</small></a>
+                                    <a href="Miembros_htc.html"> Autoridades Sup. <br> <small> (Miembros del HTC)
+                                        </small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 3-->
+
+                <!-- Accordion 4-->
+                <div class="card">
+                    <div class="card-header1" role="tab" id="headingOne1">
+                        <div class="accordion-item">
+                            <div class="accordion-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h6 class="mb-0">
+                                        <i class="far fa-file-alt"></i> Informes
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h6>
+                                </a>
+                            </div>
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="submenu">
+                                    <a href="#"> Exportar Datos </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Accordion 4-->
+            </div>
+            <!-- Fin Barra Lateral-->
+        </aside>
+
+        <!-- Inicio Segundo Contenedor -->
+        <div class="contenedor2">
+
+            <!-- Inicio Portada -->
+            <div class="portada">
+                <h1 class="titulo">Escalafon general</h1>
+            </div>
+            <!-- Fin Portada -->
+
+
+            <!-- Filtro - Buscador -->
+            <div class="section-tittle">
+                <h4>Cargar Liquidacion</h4>
+            </div>
+            <!-- Fin Filtro - Buscador -->
+
+            <!-- Inicio tabla -->
+            <div class="tabla1">
+
+                <div class="card">
+                    <!--Card content-->
+                    <div class="card-body text-center">
+                        <form class="" action="#!">
+                            <div id="contenedor-3">
+                                <div class="btn-text">
+                                    <h5>Usted liquidara el mes de:</h5>
+                                </div>
+                                <div class="btn-liq">
+                                    <!-- Periodo de Liquidacion-->
+                                    <input class="form-control-1" type="text" id="inputDisabledEx" placeholder="Enero" 
+                                        disabled>
+                                </div>
+
+                                    <button type="submit" value="enviar" class="btn btn-success">
+                                        Liquidar <i class="fas fa-hand-holding-usd"></i></button>
+                        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fin tabla -->
+
+        </div>
+        <!-- Fin Segundo Contenedor -->
+
+    </section>
+    <!--Fin Section Content-->
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"
+        integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+    <script src=""></script>
+    <script type="text/javascript">
+    </script>
+
+</body>
+</html>

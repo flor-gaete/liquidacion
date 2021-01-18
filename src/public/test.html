@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Informes</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .accordion {
+            box-shadow: none;
+        }
+        
+        ;
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg primary-color-dark scrolling-navbar">
+            <div class="container-fluid">
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                   </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="white-text " href="#">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+
+       <!-- Sidebar -->
+       <div class="sidebar-fixed position-fixed">
+        <!-- Logo -->
+        <a class="logo-wrapper waves-effect" href="index.html">
+            <img src="img/logo-principal.png" width="" class="" alt="">
+        </a>
+
+        <!--Accordion-->
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+            <!-- Accordion 1-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h6 class="mb-0">
+                            <i class="fas fa-chart-bar"></i> Estadísticas <i class="fas fa-angle-down rotate-icon"></i>
+                        </h6>
+                    </a>
+                </div>
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <a class="" href="estadisticas.html">
+                            Gráficos
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 2-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTwo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                        <h6 class="mb-0">
+                            <i class="far fa-file-alt"></i> Informes <i class="fas fa-angle-down rotate-icon"></i>
+                        </h6>
+                    </a>
+                </div>
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <a class="" href="faltaconaviso.html">
+                           Falta con aviso
+                        </a>
+                        <hr>
+                        <a class="" href="cumple.html">
+                            Cumpleaños
+                         </a>
+                         <hr>
+                         <a class="" href="jubilaciones.html">
+                            Jubilaciones
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 3-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a href="certificaciones.html">
+                        <h6 class="mb-0">
+                            <i class="fas fa-stamp"></i> Certificaciones
+                        </h6>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Accordion 4-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a href="partes_novedades.html">
+                        <h6 class="mb-0">
+                            <i class="far fa-clipboard"></i> Partes y Novedades
+                        </h6>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Sidebar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-3">
+        <div class="jumbotron text-center mt-6">
+            <h2 class="font-weight-bolder text-center ">
+
+               TEST
+            </h2>
+        </div>
+
+        <!-- Contenedor de Botones para seleccionar gráfico -->
+        <div class="container">
+            <div class="row">
+                <table>
+                    <tbody id="tabla-legajos">
+                        
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+        <!--Grid column-->
+    </main>
+
+    </div>
+    <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--Footer-->
+    <footer class="text-center font-small white-text blue darken-4">
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2020 Copyright:
+            <a href="" target="_blank" class="white-text"> HTC </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <!-- <script src="js/utils/test.js" type="module"></script> -->
+    <script src="js/funciones.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Informes</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .accordion {
+            box-shadow: none;
+        }
+
+        ;
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg primary-color-dark scrolling-navbar">
+            <div class="container-fluid">
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="white-text " href="#">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+            <!-- Logo -->
+            <a class="logo-wrapper waves-effect" href="index.html">
+                <img src="img/logo-principal.png" width="" class="" alt="">
+            </a>
+
+            <!--Accordion-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion 1-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                            aria-controls="collapseOne1">
+                            <h6 class="mb-0">
+                                <i class="fas fa-chart-bar"></i> Estadísticas <i
+                                    class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="estadisticas.html">
+                                Gráficos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 2-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                            aria-expanded="false" aria-controls="collapseTwo2">
+                            <h6 class="mb-0">
+                                <i class="far fa-file-alt"></i> Informes <i class="fas fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+                    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <a class="" href="faltaconaviso.html">
+                                Falta con aviso
+                            </a>
+                            <hr>
+                            <a class="" href="cumple.html">
+                                Cumpleaños
+                            </a>
+                            <hr>
+                            <a class="" href="jubilaciones.html">
+                                Jubilaciones
+                            </a>
+                            <a class="" href="antiguedad.html">
+                                Antigüedad
+                            </a>
+                            <a class="" href="#">
+                                Total de Agentes
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 3-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree3">
+                        <a href="certificaciones.html">
+                            <h6 class="mb-0">
+                                <i class="fas fa-stamp"></i> Certificaciones
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accordion 4-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree3">
+                        <a href="partes_novedades.html">
+                            <h6 class="mb-0">
+                                <i class="far fa-clipboard"></i> Partes y Novedades
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Sidebar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-3">
+        <div class="jumbotron text-center mt-6">
+            <h2 class="font-weight-bolder text-center ">
+                ESTADÍSTICAS
+            </h2>
+        </div>
+
+        <!-- Contenedor principal -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 mb-4 p-0">
+                    <div class="card">
+                        <div class="card-body mx-auto align-items-center justify-content-around ">
+                            <select name="option-uno" name="" id="select-uno" class="btn btn-outline-primary">
+                                <option selected disabled>Seleccione una opción </option>
+                                <option value="cantidad">Cantidad</option>
+                                <option value="porcentaje">Porcentaje</option>
+                            </select>
+
+                            <select name="option-dos" name="" id="select-dos" class="btn btn-outline-primary">
+                                <option selected disabled>Seleccione una opción</option>
+                                <option value="por-categoria">Por Categoria</option>
+                                <option value="por-formacion">Por Formación</option>
+                                <option value="por-dependencia">Por Dependencia</option>
+                                <option value="por-edad">Por Franja etárea</option>
+                            </select>
+
+                            <select name="option-tres" id="select-tres" class="btn btn-outline-primary">
+                                <option selected disabled>Seleccione una opción</option>
+                                <option value="Barras-verticales">Barras verticales</option>
+                                <option value="Líneas">Líneas</option>
+                                <option value="Dona">Dona</option>
+                                <option value="Radar">Radar</option>
+                                <option value="Barras-horizontales">Barras horizontales</option>
+                            </select>
+
+                            <button class="btn btn-primary">
+                                Filtrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- LIENZO CANVAS -->
+        <!--GRAFICO BARRAS VERTICALES-->
+        <div class="row">
+            <div class="col-md-8 mb-4 wow fadeIn mx-auto">
+                <div class="card" id="lienzo" hidden>
+                    <div class="card-body" id="papa-de-canvas">
+                        <canvas id="myChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 wow fadeIn mx-auto">
+                <div class="card">
+                    <table class="table-sm">
+                        <tr>
+                            <th>titulo1</th>
+                            <th>titulo2</th>
+                            <th>titulo3</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>celda1</td>
+                            </tr>
+                            <tr>
+                                <td>celda2</td>
+                            </tr>
+                            <tr>
+                                <td>celda3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    </div>
+    <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--Footer-->
+    <footer class="text-center font-small white-text blue darken-4">
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2020 Copyright:
+            <a href="" target="_blank" class="white-text"> HTC </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+    <script>
+        const restaurarCanvas = () => {
+            const chart = document.querySelector('#myChart');
+            const cardBody = document.querySelector('#papa-de-canvas');
+            cardBody.removeChild(chart);
+
+            let canvasNuevo = document.createElement('canvas');
+            canvasNuevo.setAttribute('id', 'myChart');
+            cardBody.appendChild(canvasNuevo);
+        }
+
+        document.getElementById('select-tres').addEventListener('change', () => {
+            const lienzo = document.querySelector('#lienzo');
+            lienzo.removeAttribute('hidden');
+
+            let tipoGrafico = document.querySelector('#select-tres').value;
+            if (tipoGrafico === 'Barras-verticales') {
+                // remover atributos del canvas
+                restaurarCanvas();
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    },
+                    maintainAspectRatio: false,
+                });
+            }
+
+            if (tipoGrafico === 'Dona') {
+                restaurarCanvas();
+                var ctxP = document.getElementById("myChart").getContext('2d');
+                var myPieChart = new Chart(ctxP, {
+                    type: 'pie',
+                    data: {
+                        labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                        datasets: [{
+                            data: [300, 50, 100, 40, 120],
+                            backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                            hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: false
+                    }
+                });
+            }
+
+            if (tipoGrafico === 'Líneas') {
+                restaurarCanvas();
+                //line
+                var ctxL = document.getElementById("myChart").getContext('2d');
+                var myLineChart = new Chart(ctxL, {
+                    type: 'line',
+                    data: {
+                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                        datasets: [{
+                            label: "My First dataset",
+                            backgroundColor: [
+                                'rgba(105, 0, 132, .2)',
+                            ],
+                            borderColor: [
+                                'rgba(200, 99, 132, .7)',
+                            ],
+                            borderWidth: 2,
+                            data: [65, 59, 80, 81, 56, 55, 40]
+                        }, {
+                            label: "My Second dataset",
+                            backgroundColor: [
+                                'rgba(0, 137, 132, .2)',
+                            ],
+                            borderColor: [
+                                'rgba(0, 10, 130, .7)',
+                            ],
+                            data: [28, 48, 40, 19, 86, 27, 90]
+                        }]
+                    },
+                    options: {
+                        responsive: true
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script src="js/funciones.js" type="module"></script>
+    <!-- <script src="js/utils/carga-de-datos.js" type="module"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Faltas</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+
+       <!-- Sidebar -->
+       <div class="sidebar-fixed position-fixed">
+        <!-- Logo -->
+        <a class="logo-wrapper waves-effect" href="index.html">
+            <img src="img/logo-principal.png" width="" class="" alt="">
+        </a>
+
+        <!--Accordion-->
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+            <!-- Accordion 1-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h6 class="mb-0">
+                            <i class="fas fa-chart-bar"></i> Estadísticas <i class="fas fa-angle-down rotate-icon"></i>
+                        </h6>
+                    </a>
+                </div>
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <a class="" href="estadisticas.html">
+                            Gráficos
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 2-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTwo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                        <h6 class="mb-0">
+                            <i class="far fa-file-alt"></i> Informes <i class="fas fa-angle-down rotate-icon"></i>
+                        </h6>
+                    </a>
+                </div>
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <!-- <a class="" href="faltaconaviso.html">
+                           Falta con aviso
+                        </a>
+                        <hr> -->
+                        <a class="" href="cumple.html">
+                            Cumpleaños
+                         </a>
+                         <hr>
+                         <a class="" href="jubilaciones.html">
+                            Jubilaciones
+                         </a>
+                         <hr>
+                         <a class="" href="antiguedad.html">
+                            Antiguedad
+                         </a>
+                        <hr> 
+                          
+                        <a class="" href="totaldeagentes.html">
+                            Total de agentes
+                         </a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 3-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a href="certificaciones.html">
+                        <h6 class="mb-0">
+                            <i class="fas fa-stamp"></i> Certificaciones
+                        </h6>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Accordion 4-->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a href="partes_novedades.html">
+                        <h6 class="mb-0">
+                            <i class="far fa-clipboard"></i> Partes y Novedades
+                        </h6>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Sidebar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class=" mx-lg-3">
+        <div class="jumbotron text-center mt-6">
+            <h2 class="font-weight-bolder text-center ">
+                FALTAS CON AVISO
+            </h2>
+        </div>
+        <!-- <div class="col-md-6 mb-4"> </div> -->
+
+
+         <!--Grid column-->
+         <div class="col-lg-12 col-md-6 mb-4 p-0 wow fadeIn">
+
+            <!--Card-->
+            <div class="card">
+
+                <!--Card content--> 
+                <div class="card-body">
+                    <button disabled class="btn btn-info btn-md" type="submit" onclick="descargarpdf()" id="descargarpdf" >Cargando datos... Aguarde por favor</button>
+                    <table id="dtBasicExample" class="text-center table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                        <thead class="bg-info">
+                            <tr>
+                                <th class="th-sm">Nombre y Apellido
+                                </th>
+                                <th class="th-sm">CUIL
+                                </th>
+                                <th class="th-sm">Razones Particulares
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-faltaconaviso">
+            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Nombre y Apellido
+                                </th>
+                                <th>Cuil
+                                </th>
+                                <th>Razones particulares
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Footer-->
+        <footer class="text-center font-small white-text blue darken-4">
+            <!--Copyright-->
+            <div class="footer-copyright py-3">
+                © 2020 Copyright:
+                <a href="" target="_blank" class="white-text"> HTC </a>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+
+        <!-- SCRIPTS -->
+        <!-- pdfmake -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js" integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA==" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Initializations -->
+        <script type="text/javascript">
+            // Animations initialization
+            new WOW().init();
+        </script>
+        <!-- MDBootstrap Datatables  -->
+        <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+        <script defer src="js/utils/htcmiembros.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            });
+        </script>
+        
+</body>
+
+</html>

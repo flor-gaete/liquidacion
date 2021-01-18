@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Recibos Digitales</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/styleNP.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc_disabled:after,
+        table.dataTable thead .sorting_asc_disabled:before,
+        table.dataTable thead .sorting_desc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc_disabled:after,
+        table.dataTable thead .sorting_desc_disabled:before {
+            bottom: .5em;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+
+
+    
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class=" mx-lg-3">
+        <div class="jumbotron bg-color text-center mt-2" style="height: 130px; width:auto;">
+            <h2 class="font-weight-bolder text-center ">
+                Recibos Digitales
+            </h2>
+        </div>
+        <!-- <div class="col-md-6 mb-4"> </div> -->
+
+        <!--Grid column-->
+        <div class="col-lg-12 col-md-6 mb-4 p-0 wow fadeIn">
+            <!--Card-->
+            <div class="card">
+                <!--Card content-->
+                <div class="card-body text-center">
+                    
+                    <div class="row">
+                        <div class="col-4">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <label class="form-label" for="form8Example3">Ingrese DNI/cuil</label>
+                            <input id="filtro" class="form-control " type="text" placeholder="Nombre y/o Apellido y presione Enter " aria-label="Search">
+
+                        </div>
+                        </div>
+                        <div class="col-2">
+                          <!-- Name input -->
+                          <div class="form-outline">
+                            <label class="form-label" for="form8Example4">Periodo</label>
+                            <select  class="form-control" name="" id="" value="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                
+                            </select>
+                            
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <!-- AÑO -->
+                          <div class="form-outline">
+                        <label class="form-label" for="form8Example5">AÑO</label>
+                         <select  class="form-control" name="" id="" value="">
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            
+                        </select>
+                                                                
+                          </div>
+                        </div>
+
+                        <div class="col-3">
+                            <!-- BOTON PARA FILTRAR-->
+                            <div class="form-inline">
+                            <label class="form-label" for=""></label>
+                          <button type="button" class="btn btn-primary">Filtrar</button>
+                         </div>
+
+                         <!-- FIN  BOTON PARA FILTRAR-->
+                        </div>
+                    </div>
+                        
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                     <table id="dtBasicExample"
+                        class="text-center table table-striped table-bordered table-sm text-center" cellspacing="0"
+                        width="100%">
+                         <thead class="bg-color-tr">
+                            <tr>
+                                <th class="th-sm">Codigo
+                                </th>
+                                <th class="th-sm">Concepto de liquidacion
+                                </th>
+                                <th class="th-sm">Cantidad
+                                </th>
+                                <th class="th-sm">Bruto
+                                </th>
+                                <th class="th-sm">Salario Fliar
+                                </th>
+                                <th class="th-sm">Descuentos
+                                </th>
+                                <th class="th-sm">Contribuciones
+                                </th>
+                            </tr>
+                        </thead> 
+                          <tbody id="tabla-totaldeagentes">  
+                            <tr>
+                               <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                 </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                     </tr>
+                              <tr>
+                                <td></td>
+                                <td><dt>Totales :</dt></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </t>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                    <dt>NETO :</dt>
+                                    </td>
+                                    <td></td>
+                                    <td>Costo Total :</td>
+                                    <td></td>
+                                    <td></td>
+                                     </tr>
+                           </tr>
+                              
+                              
+                         </tbody> 
+                        
+                     </table> 
+                </div>
+            </div>
+            <!--/.Card-->
+        
+        </div>
+        <!--Grid column-->
+
+        <!--Modal: Login / Register Form Demo-->
+         <div class="modal fade" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl align-items-center" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><dt>Novedades Transitorias</dt></h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-6">
+      
+                            <div class="col-6">
+                              <div class="title">Contenido de la izquierda</div>
+                              <div class="card text-center">
+                              <div class="card-body">
+                                <h5 class="card-title"><dt>Cargar Novedades</></h5>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                      <!-- Name input -->
+                                      <div class="form-outline">
+                                        <label class="form-label" for="form8Example3">Novedades</label>
+                                        <input class="form-control " list="browsers" name="browser" id="browser">
+                                            <datalist id="browsers">
+                                                <option value="127 hijos">
+                                                <option value="135 nacimiento">
+                                                <option value="527 salario familiar">
+                                                <option value="Opera">
+                                            </datalist>
+                                    </div>
+                                    </div>
+                                    <div class="col-3">
+                                      <!-- Name input -->
+                                      <div class="form-outline">
+                                        <label class="form-label" for="form8Example4">Periodo</label>
+                                        <select  class="form-control" name="" id="" value="">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            
+                                        </select>
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="col-3">
+                                      <!-- AÑO -->
+                                      <div class="form-outline">
+                                    <label class="form-label" for="form8Example5">AÑO</label>
+                                     <select  class="form-control" name="" id="" value="">
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        
+                                    </select>
+                                                                            
+                                      </div>
+                                    </div>
+                                  </div>
+                                        <br>                                                                                                        
+                                         
+                                <button type="button" class="btn btn-info">Añadir <i class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                                </div>
+
+                                
+                                
+                    <!------------------------------------------------------------------->    
+                        
+                                <div class="col-6"> 
+                                <div class="title">Contenido de la derecha</div>
+                                <div class="card card text-center">
+                                <div class="card-body ">
+                                  <h5 class="card-title"><dt>Lista Novedades</></h5>
+                                  <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                    vdkfdkbsbgslñblññsbkbnkbs
+                                    knvnvncvvcxv.
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                    vdkfdkbsbgslñblññsbkbnkbs
+                                    knvnvncvvcxv.
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                    vdkfdkbsbgslñblññsbkbnkbs
+                                    knvnvncvvcxv.
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                    vdkfdkbsbgslñblññsbkbnkbs
+                                    knvnvncvvcxv.
+                                  </p>
+                              
+                                </div>
+                              </div>
+                        <!--<div id='datos-agente' class="container my-3 py-3 z-depth-1">-->
+                        <!-- aca van los datos de los agentes. -->
+                        
+                            
+                          
+                        <!-- aca terminan los datos de los agentes. -->   
+                        <!--</div>-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-info btn-md" type="submit" onclick="descargarpdf()" id="descargarpdf">Aceptar</button>
+                    </div>  
+                </div>
+            </div>
+        </div> 
+
+        
+
+        <!-- SCRIPTS -->
+        <!-- pdfmake -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js" integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA==" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Initializations -->
+        <script type="text/javascript">
+            // Animations initialization
+            new WOW().init();
+        </script>
+        <!-- MDBootstrap Datatables  -->
+        <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+        <script src="js/utils/novedades_transitorias.js"></script>
+        <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            });
+        </script> -->
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                $('#dtBasicExample').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+            })
+        </script> -->
+       
+
+</body>
+
+</html>
